@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} infos département - INFOSCOVID{% endblock %}
+
+{% block body %}
+<div class="containerDetail">
+    <h1>Département : <u>{{data.LiveDataByDepartement.0.nom}}</u></h1>
+    <p style="text-align: center;">{{data.LiveDataByDepartement.0.date}}</p>
+    <div class="jumeaux">
+        <p>Hospitalisations : {{data.LiveDataByDepartement.0.hospitalises}}</p>
+        <p>Réanimations : {{data.LiveDataByDepartement.0.reanimation}}</p>
+    </div>
+
+    <div>
+        {{render_chart(chart)}}
+    </div>
+</div>
+{% endblock %}

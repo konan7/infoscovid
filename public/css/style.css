@@ -1,0 +1,169 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.principal{
+    color: #000;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.nav{
+    height: 5.5em;
+    background-color: rgba(196, 4, 4, 0.904);
+    color: white;
+    margin-bottom: 1rem;
+}
+nav{
+    padding: 1rem;
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+.strong{
+    font-weight: bolder;
+    border: double 2px #fff;
+    padding: .5rem;
+}
+.test{
+   display: flex;
+   justify-content: end;
+}
+.contentHome{
+    width: 55%;
+    /* background:rgba(10, 10, 10, 0.986); */
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.card{
+    width: 15rem;
+    height: 15rem;
+    background-color: rgb(111, 134, 139);
+    margin: 1rem auto;
+    box-shadow: 10px 5px 10px #000;
+    margin: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card h3{
+    margin-bottom: 1rem;
+}
+.card .model1{
+    font-size: xx-large;
+    color: yellow;
+    background-color: #000;
+    width: 50%;
+    margin: 0 auto;
+}
+.card .model2{
+    font-size: xx-large;
+    color: red;
+    background-color: #000;
+    width: 50%;
+    margin: 0 auto;
+}
+.card .model3{
+    font-size: xx-large;
+    color: rgb(3, 165, 3);
+    background-color: #000;
+    width: 55%;
+    margin: 0 auto;
+}
+.card .model4{
+    font-size: xx-large;
+    color: #fff;
+    background-color: #000;
+    width: 65%;
+    margin: 0 auto;
+}
+.card i{
+    margin-bottom: .5rem;
+    font-size: xx-large;
+    color: rgb(151, 3, 3);
+}
+li{
+    list-style: square;
+}
+.card .fa-heartbeat{
+    color: rgb(4, 59, 27);
+}
+.card .fa-calculator{
+    color: rgb(4, 19, 59);
+}
+footer{
+    text-align: center;
+    margin-top: 3.25rem;
+}
+.departements{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.departementCard{
+    margin: 2rem auto;
+    border: 1px #000 solid;
+}
+.h1Sepa{
+    margin: 2rem;
+}
+.red{
+    color: red;
+}
+.bronx{
+    color: rgb(6, 84, 104);
+}
+.portfolio{
+    width: 8rem;
+}
+.containerDetail{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: 2rem auto 15rem;
+    border-radius: 10px;
+    height: 50rem;
+    padding-top: 2rem;
+    color: #000;
+}
+.containerDetail h1{
+    color: #000;
+    margin-bottom: 1rem;
+}
+.containerDetail p{
+    margin: 1rem;
+}
+.jumeaux{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navAct{
+    margin-left: auto;
+    flex-direction: column;
+}
+.containerDetail h1{
+    text-align: center;
+}
+
+/* @media screen and(min-width: 1000px){
+   .principal{
+        font-size: 10px;
+    }
+} */

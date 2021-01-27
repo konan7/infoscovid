@@ -1,0 +1,3 @@
+[25-Jan-2021 13:34:02 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in E:\Documents\Alpha\covid\vendor\symfony\routing\Matcher\UrlMatcherInterface.php on line 24
+[25-Jan-2021 13:36:13 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in E:\Documents\Alpha\covid\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 212
+[25-Jan-2021 13:39:04 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in E:\Documents\Alpha\covid\vendor\symfony\translation\Extractor\AbstractFileExtractor.php on line 77

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Départements - INFOSCOVID{% endblock %}
+
+
+{% block body %}
+  <section>
+    <h1 class="h1Sepa">Recherche par départements :</h1>
+    <div class="departements">
+
+        
+
+        {% for department in departments.allLiveFranceData %}
+
+        <div class="departementCard">
+            <h3>{{department.nom}}</h3>
+            <p>Hospitalisations : <span class="red">{{ department.hospitalises}}</span></p>
+            <p>Réanimations : <span class="bronx">{{ department.reanimation}}</span></p>
+            <a href="{{path('detail_departement', {'department' : department.nom})}}">Détails</a>
+        </div>
+
+        {% endfor %}
+
+    </div>
+</section>
+{% endblock %}

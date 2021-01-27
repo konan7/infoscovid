@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil - INFOSCOVID{% endblock %}
+
+{% block body %}
+
+    <h1 class="principal">Informations chiffrées sur la propagation du COVID-19 en FRANCE et ses conséquences au {{ data.FranceGlobalLiveData.1.date }}</h1>
+
+    <div class="contentHome">
+        <div class="card"><i class="fas fa-hospital"></i>
+            <h3>Nombre d'hospitalisations en cours au "{{ data.FranceGlobalLiveData.1.date }}" :</h3><p class="model1">{{data.FranceGlobalLiveData.1.hospitalises}}</p></div>
+        <div class="card"><i class="fas fa-procedures"></i>
+            <h3>Nombre de réanimations en cours au "{{ data.FranceGlobalLiveData.1.date }}" :</h3><p class="model1">{{data.FranceGlobalLiveData.1.reanimation}}</p></div>
+        <div class="card"><i class="fas fa-church"></i>
+            <h3>Nombre de personnes décédées à ce jour :</h3><p class="model2">{{data.FranceGlobalLiveData.1.deces}}</p></div>
+        <div class="card"><i class="fas fa-heartbeat"></i>
+            <h3>Nombre de personnes GUÉRIS à ce jour :</h3><p class="model3">{{data.FranceGlobalLiveData.0.gueris}}</p></div>
+        <div class="card"><i class="fas fa-calculator"></i>
+            <h3>Nombre de cas confirmés à ce jour :</h3><p class="model4">{{data.FranceGlobalLiveData.0.casConfirmes}}</p></div>
+        <div class="card"><h3>Sources des données :</h3> <p>
+            <ul>
+                <li>{{data.FranceGlobalLiveData.1.source.nom }}</li><br>
+                <li style="width: 70%; margin:0 auto;">{{data.FranceGlobalLiveData.0.source.nom}}</li>
+            </ul>
+            </p></div>
+
+    </div>
+  
+
+{% endblock %}
+
